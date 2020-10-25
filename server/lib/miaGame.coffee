@@ -21,6 +21,7 @@ class MiaGame
 		@startRoundsEarly = true
 
 	registerPlayer: (player) -> @players.add player
+	unregisterPlayer: (player) -> @players.remove player
 	registerSpectator: (player) ->
 		player.isSpectator = true
 		@players.add player

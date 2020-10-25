@@ -46,6 +46,9 @@ class RemotePlayer
 	registrationRejected: (reason) ->
 		@sendMessage "REJECTED;#{reason}"
 
+	unregisterCompleted: ->
+		@sendMessage "UNREGISTERED"
+
 	changeState: (newState) =>
 		@currentState = newState
 

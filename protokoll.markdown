@@ -90,3 +90,7 @@ Gründe, warum ein Spieler verliert
 - `CAUGHT_BLUFFING`: Spieler hat mehr angesagt als er hatte, und der nachfolgende Spieler wollte sehen
 - `MIA`: Es wurde Mäxchen aufgedeckt
 
+Abmelden
+--------
+- client->server: `UNREGISTER`
+- server->client: `UNREGISTERED`

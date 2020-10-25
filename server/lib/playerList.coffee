@@ -13,6 +13,9 @@ class PlayerList
 		@players = @collect (existingPlayer) -> existingPlayer.name != newPlayer.name
 		@players.push newPlayer
 
+	remove: (player) ->
+		@players = @collect (existingPlayer) -> existingPlayer.name != player.name
+
 	first: (fn) ->
 		return if @isEmpty()
 		fn @players[0]

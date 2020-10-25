@@ -83,3 +83,7 @@ Reasons for losing a round
 - `CAUGHT_BLUFFING`: Player announced higher dice than actually given and the next player wanted to `SEE`
 - `MIA`: Mia was announced
 
+Unregister
+----------
+- client->server: `UNREGISTER`
+- server->client: `UNREGISTERED`
